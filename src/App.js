@@ -9,7 +9,7 @@ function App() {
    // const test = useRef();
    return (
       <>
-         <AppCardControl />
+            <AppCardControl />
          <div className='bg-animation'>
             <div id='stars'></div>
             <div id='stars2'></div>

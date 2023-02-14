@@ -24,7 +24,8 @@ export default function ChooseToggleButton({
             justifyContent: 'space-evenly',
             borderRadius: 5,
             background: 'white',
-            opacity: 0.6,
+            opacity: 1,
+            mt: 7,
          }}
       >
          {data?.map((item) => (

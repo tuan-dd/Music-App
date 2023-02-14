@@ -23,8 +23,10 @@ import MenuIcon from '@mui/icons-material/Menu';
 import { Button } from '@mui/material';
 import ChooseToggleButton from './ChooseToggleAudio';
 const style = {
-   width: 500,
-   height: 700,
+   maxWidth: 500,
+   minWidth: 400,
+   // with: 'auto',
+   height: 600,
    display: 'flex',
    flexDirection: 'column',
    alignItems: 'center',
@@ -89,7 +91,7 @@ export default function AppCardControl() {
    return (
       <Card sx={style}>
          <Button
-            sx={{ position: 'absolute', top: 0, right: 0, opacity: 0.4 }}
+            sx={{ position: 'absolute', top: 10, right: 19, opacity: 0.4 }}
             variant='contained'
             color={on ? 'primary' : 'inherit'}
             disableElevation={on}
