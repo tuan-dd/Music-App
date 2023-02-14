@@ -101,10 +101,12 @@ const usePlayAudio = () => {
       const indexOfChose = dataAudio.item.findIndex(
          (item) => item.name === value,
       );
-      dataAudio.newAudio = await new Audio(dataAudio.item[indexOfChose].src);
-      playMusic();
-      dataAudio.index = indexOfChose;
-      setIndex(() => dataAudio.index);
+      if (indexOfChose > -1) {
+         dataAudio.newAudio = new Audio(dataAudio.item[indexOfChose].src);
+         playMusic();
+         dataAudio.index = indexOfChose;
+         setIndex(() => dataAudio.index);
+      }
    };
    const ActionRepeatAudio = (value) => {
       if (value) {
